@@ -1,5 +1,8 @@
 # TIB – Student Planning and Performance Tracking App 📚📊
 
+![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white) ![CI](https://github.com/acharitha001-crypto/TIB-Flutter/actions/workflows/ci.yml/badge.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+
 A simple **Flutter** app that helps students **plan academic tasks** and **track their performance** in each subject.
 Built as part of the **Flutter Lab** (B.Tech CSE, III Year, ACE Engineering College).
 
@@ -18,6 +21,15 @@ Built as part of the **Flutter Lab** (B.Tech CSE, III Year, ACE Engineering Coll
 - **Target score** – subjects below your target are highlighted
 - **Settings** – target slider, dark mode, demo data, clear data
 - **Offline** – everything is saved on the device with `shared_preferences`
+
+## 📱 How to use
+
+1. Open **Settings → Load demo data** to explore the app.
+2. Tap **Add Task** to plan an assignment, revision or lab record.
+3. Tick tasks when done – the dashboard ring updates instantly.
+4. Add exam marks in **Performance** to see averages, grades and weak subjects.
+
+More details: [docs/user_guide.md](docs/user_guide.md)
 
 ## 🖼️ Screenshots
 
@@ -73,9 +85,27 @@ flutter analyze
 flutter test
 ```
 
+## ✅ Tests
+
+| Area | What is tested |
+|---|---|
+| Models | JSON round trip, priority fallback, percentage |
+| Utils | Grades, due labels, validators |
+| Controller | Add / toggle / delete, averages, weak subjects, persistence, search |
+| Widgets | Empty state, form validation, adding a task |
+
+See [docs/testing.md](docs/testing.md) for the full test plan.
+
 ## 🛠️ Tech stack
 
 Flutter · Dart · Material 3 · shared_preferences · flutter_test · GitHub Actions
+
+## 🔮 Future scope
+
+- Deadline reminders and notifications
+- Cloud sync with Firebase
+- Weekly timetable and Pomodoro timer
+- SGPA / CGPA calculator
 
 ## 👤 Author
 
